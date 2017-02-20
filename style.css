@@ -3,14 +3,9 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-}
-
-.parent {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+  position: absolute;
+  top: -600px;
+  left: 0;
 }
 
 .block {
@@ -23,18 +18,18 @@ body {
   bottom: 0;
   left: 0;
   margin: auto;
+  border-width: 2px;
 }
+
 
 #block1 {
   background-color: rgb(172, 172, 172);
-  z-index: 1;
 }
 
 #block2 {
   background-color: rgb(204, 204, 204);
   left: -40px;
   top: -40px;
-  z-index: 3;
 }
 
 #block3 {
@@ -42,12 +37,9 @@ body {
   width: 454px;
   padding: 40px 32.5px 40px 32.5px;
   background-color: rgb(235, 235, 235);
-  left: -30px;
-  top: -30px;
-  margin: 5.484px;
-  z-index: 5;
+  left: -40px;
+  top: -40px;
 }
-
 
 h3 {
   margin-top: 5px;
@@ -58,8 +50,6 @@ h3 {
   line-height: 1.2;
   text-align: center;
 }
-
-
 
 .share {
   bottom: 0;
@@ -98,14 +88,12 @@ h3 {
   top: 47px;
   left: 438px;
   background-color: rgb(0, 174, 239);
-  z-index: 2;
 }
 
 #bookmark2 {
   top:43px;
   left: 470px;
   background-color: rgb(57, 181, 74);
-  z-index: 4;
 }
 
 #bookmark3 {
@@ -113,8 +101,8 @@ h3 {
   width: 107px;
   left: 494px;
   background-color: rgb(246, 142, 86);
-  z-index: 6;
 }
+
 
 h1 {
   font-size: 24px;
@@ -130,24 +118,17 @@ p {
   color: rgb(51, 51, 51);
 }
 
-.image {
+#image1 {
   width: 207px;
   height: 111px;
   border: 0;
   float: left;
   margin-right: 20px;
+  margin-bottom: 15px;
 
 }
 
-.image::after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden;
-}
-
-.image2 {
+#image2 {
   width: 140px;
   height: 140px;
   border: 0;
@@ -155,7 +136,7 @@ p {
   margin-left: 20px;
 }
 
-.image2::after {
+.images::after {
   content: ".";
   display: block;
   height: 0;
@@ -177,39 +158,41 @@ h2 {
   margin-bottom: 14px;
 }
 
-.joke1 {
+.jokes {
   width: 194px;
   height: 88px;
   border: 0;
+}
+
+.jokes::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+#joke1 {
   float: left;
   margin-bottom: 7px;
 }
 
-.joke2 {
-  width: 194px;
-  height: 88px;
-  border: 0;
+#joke2 {
   float: right;
   margin-bottom: 7px;
 }
 
-.joke3 {
+#joke3 {
   margin-top: 7px;
-  width: 194px;
-  height: 88px;
-  border: 0;
-  float: left;;
+  float: left;
 }
 
-.joke4 {
+#joke4 {
   margin-top: 7px;
-  width: 194px;
-  height: 88px;
-  border: 0;
   float: right;
 }
 
-.footer {
+footer {
   margin-top: 14px;
   padding-left: 9px;
   padding-right: 9px;
